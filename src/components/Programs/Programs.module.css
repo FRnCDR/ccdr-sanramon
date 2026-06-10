@@ -1,0 +1,182 @@
+.section {
+    padding: 7rem 0;
+    background: #f8f8f8;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    color: #CC0000;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .sub {
+    color: #666;
+    font-size: 0.97rem;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    cursor: default;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+  }
+
+  .cardTop {
+    padding: 1.5rem 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .iconBox {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon { font-size: 1.25rem; color: #fff; }
+
+  .age {
+    font-size: 0.75rem;
+    color: #888;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  .cardBody { padding: 0 1.5rem 1.5rem; }
+
+  .cardTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.4rem;
+  }
+
+  .cardDesc {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.65;
+  }
+
+  /* Upcoming */
+  .upcomingBox {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  }
+
+  .upcomingHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .upcomingHeader h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+
+  .calIcon { color: #CC0000; font-size: 1.2rem; }
+
+  .actList { display: flex; flex-direction: column; gap: 1rem; }
+
+  .actItem {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #f9f9f9;
+    transition: background 0.2s;
+  }
+
+  .actItem:hover { background: #fff0f0; }
+
+  .actDate {
+    background: #CC0000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.6rem 0.9rem;
+    text-align: center;
+    flex-shrink: 0;
+    min-width: 50px;
+  }
+
+  .actDate strong { display: block; font-size: 1.2rem; line-height: 1; }
+  .actDate span { font-size: 0.72rem; text-transform: uppercase; opacity: 0.85; }
+
+  .actInfo { flex: 1; }
+  .actInfo h4 { font-size: 0.93rem; font-weight: 600; color: #1a1a1a; }
+  .actInfo p { font-size: 0.8rem; color: #888; margin-top: 0.15rem; }
+
+  .actBadge {
+    background: rgba(204,0,0,0.1);
+    color: #CC0000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.75rem;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+
+  .note {
+    font-size: 0.77rem;
+    color: #bbb;
+    font-style: italic;
+    margin-top: 1.25rem;
+  }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    .upcomingBox { padding: 1.25rem; }
+    .actItem { flex-wrap: wrap; }
+  }

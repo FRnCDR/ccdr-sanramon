@@ -1,0 +1,164 @@
+.section {
+    padding: 7rem 0;
+    background: #f8f8f8;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .tag {
+    display: inline-block;
+    color: #CC0000;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 0.75rem;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .sub {
+    color: #666;
+    font-size: 0.97rem;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.11);
+  }
+
+  .imgWrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .card:hover .img {
+    transform: scale(1.07);
+  }
+
+  .catBadge {
+    position: absolute;
+    top: 0.85rem;
+    left: 0.85rem;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.28rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .body { padding: 1.5rem; }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #999;
+    font-size: 0.8rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .calIcon { color: #CC0000; font-size: 0.8rem; }
+
+  .newsTitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  .excerpt {
+    font-size: 0.84rem;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 1.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .readMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #CC0000;
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.2s;
+  }
+
+  .readMore:hover { gap: 0.7rem; }
+
+  .arrow { font-size: 0.75rem; }
+
+  .cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(204,0,0,0.07);
+    border-left: 4px solid #CC0000;
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.75rem;
+    margin-top: 2.5rem;
+  }
+
+  .bullhorn { color: #CC0000; font-size: 1.3rem; flex-shrink: 0; }
+
+  .cta p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 580px) {
+    .grid { grid-template-columns: 1fr; }
+  }

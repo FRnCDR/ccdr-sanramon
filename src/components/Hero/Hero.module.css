@@ -1,0 +1,189 @@
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1920&q=80');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      140deg,
+      rgba(10,10,10,0.88) 0%,
+      rgba(140,0,0,0.75) 60%,
+      rgba(204,0,0,0.6) 100%
+    );
+  }
+
+  .particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 9rem 1.5rem 5rem;
+    width: 100%;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.9);
+    padding: 0.4rem 1.1rem;
+    border-radius: 30px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.3px;
+  }
+
+  .title {
+    font-size: clamp(2.8rem, 6vw, 4.5rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.12;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
+    max-width: 700px;
+  }
+
+  .accent {
+    color: #ff4040;
+    position: relative;
+  }
+
+  .subtitle {
+    font-size: clamp(0.95rem, 2vw, 1.12rem);
+    color: rgba(255,255,255,0.8);
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    background: #CC0000;
+    color: #fff;
+    padding: 0.9rem 2.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    box-shadow: 0 5px 20px rgba(204,0,0,0.4);
+  }
+
+  .btnPrimary:hover {
+    background: #990000;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(204,0,0,0.5);
+  }
+
+  .btnSecondary {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    padding: 0.9rem 2.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 2px solid rgba(255,255,255,0.55);
+    transition: all 0.3s;
+  }
+
+  .btnSecondary:hover {
+    border-color: #fff;
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-3px);
+  }
+
+  .stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    flex-wrap: wrap;
+  }
+
+  .stat { display: flex; flex-direction: column; gap: 0.2rem; }
+
+  .statN {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+
+  .statL {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.65);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .scrollBtn {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,0.6);
+    font-size: 1.1rem;
+    text-decoration: none;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  .scrollBtn:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .stats { gap: 1.5rem; }
+    .hero { background-attachment: scroll; }
+    .buttons { flex-direction: column; max-width: 300px; }
+    .btnPrimary, .btnSecondary { justify-content: center; }
+  }
