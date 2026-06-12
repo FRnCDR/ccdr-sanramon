@@ -45,6 +45,9 @@ import { useState, useEffect } from 'react'
             <li>
               <a href="#contacto" className={styles.cta}>Participar</a>
             </li>
+            <li>
+              <a href="/admin/inventario" className={styles.adminBtn}>Admin</a>
+            </li>
           </ul>
 
           <button

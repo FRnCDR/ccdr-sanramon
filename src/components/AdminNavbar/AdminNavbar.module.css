@@ -1,0 +1,110 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  border-bottom: 2px solid var(--primary);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.logoBold {
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.logoSub {
+  font-weight: 500;
+  color: var(--dark);
+}
+
+/* Center links */
+.center {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.adminLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #aaa;
+  margin-right: 0.6rem;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 0.88rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.navLink:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.navLink.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Back button */
+.backBtn {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  transition: all 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.backBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+@media (max-width: 700px) {
+  .adminLabel { display: none; }
+  .backBtn span { display: none; }
+  .inner { gap: 0.75rem; }
+}
