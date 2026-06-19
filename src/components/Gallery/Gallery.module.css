@@ -155,3 +155,11 @@
     }
     .wide { grid-column: span 1; }
   }
+
+  .credit {
+    text-align: center;
+    margin-top: 1.75rem;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.3px;
+  }
