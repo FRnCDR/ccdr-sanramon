@@ -75,27 +75,7 @@ import { useRef } from 'react'
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.75, duration: 0.6 }}
           >
-            <div className={styles.upcomingHeader}>
-              <FaCalendarAlt className={styles.calIcon} />
-              <h3>Próximas Actividades</h3>
-            </div>
-            <div className={styles.actList}>
-              {upcoming.map((a, i) => (
-                <div key={i} className={styles.actItem}>
-                  <div className={styles.actDate}>
-                    <strong>{a.date}</strong>
-                    <span>{a.month}</span>
-                  </div>
-                  <div className={styles.actInfo}>
-                    <h4>{a.title}</h4>
-                    <p>{a.place}</p>
-                  </div>
-                  <span className={styles.actBadge}>{a.type}</span>
-                </div>
-              ))}
-            </div>
-            <p className={styles.note}>* Fechas y actividades de ejemplo — actualizar con información oficial del CCDR
-  San Ramón.</p>
+            
           </motion.div>
         </div>
       </section>
