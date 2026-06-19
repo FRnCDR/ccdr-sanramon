@@ -5,19 +5,19 @@ import styles from './Facilities.module.css'
 
 const facilities = [
   {
-    img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1701272873248-ee041b51b02b?w=600&q=80',
     name: 'Gimnasio',
     desc: 'Instalación cubierta equipada para entrenamientos, actividades deportivas y eventos recreativos al servicio de la comunidad ramonense.',
     tag: 'Cubierto',
   },
   {
-    img: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1774296245164-aae88288f893?w=600&q=80',
     name: 'Cancha de Futsal',
     desc: 'Cancha cubierta habilitada para la práctica de fútbol sala, torneos cantonales y programas deportivos para todas las edades.',
     tag: 'Fútbol Sala',
   },
   {
-    img: 'https://images.unsplash.com/photo-1576153192396-180ecef2a715?w=600&q=80',
+    img: 'https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=600&q=80',
     name: 'Piscina',
     desc: 'Piscina disponible para entrenamientos de natación, clases grupales y programas acuáticos recreativos para la comunidad.',
     tag: 'Acuático',
